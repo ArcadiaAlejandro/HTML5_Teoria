@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es"> <!--atributos -->
+<head>
+        <meta charset="UTF-8"> <!--atributos -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--atributos -->
+        <title>Estructura basica de un formulario</title>
+</head>
+<body>
+        <!-- 
+                form -> engloba nuestro formularios
+                label -> sirve para escribir en un campo para rellenar
+                input -> sirve para crear un campo que permita al usuario interactuar
+                        tipos de input
+                                        | TIEMPO |
+                                date -> introduce una fecha
+                                        <input type = "date">
+                                en todos los navegadores
+
+                                datetime-local -> fecha y hora (no disponible en firefox)
+                                
+                                        <input type="datetime-local">
+                                        equivale a 
+                                        <input type="date">
+                                        <input type="time">
+
+                                time -> introduce una hora
+                                        <input type="time">
+
+                                month -> introducir un mes
+                                        <input type="month">
+
+                                week -> seleciona una semana de un año en concreto
+                                        <input type="week">
+
+
+                                email -> introduce email
+                                tel -> introducir numeros telefonicos
+                                search -> barras de busqueda
+                                url -> introduce URL'S
+                                password -> contraseñas
+
+
+
+                                color -> especifica un color
+                                number -> valor numerico
+                                range -> establece un rango
+                                <input type="range" step="10" min="0" max="20"
+                                
+                                reset -> resetear el formulario
+                                submit -> enviar el fomulario
+                                text -> valor por defecto
+                                hidden-> campo oculto
+                               
+                                radio-> un boton para seleccionar punto
+                                <input type ="radio" name="gender" value="masculino" checked>
+
+
+                                checkbox -> permite selecionar varias opciones de una lista
+
+                                <input type="checkbox" name="languages"> HTMl
+
+                                select -> crea lista despegable
+        <select name="languaje" multiple>
+                                <option value="html">HTML</option>
+                                <option value="html">HTML</option>
+                                <option value="html">HTML</option>     
+
+
+
+                button -> Crea un boton 
+        -->
+
+        <form action="Linea.html"> 
+                <label for="name">Nombre</label>
+                <input id="name"> 
+                <button>Enviar fomulario</button>
+        </form>
+
+        <!-- FORMA DE CREAR UN BOTON
+        -->
+
+        <form>
+                <input type="submit" value="Enviar">
+                <button> Enviar </button>
+        </form>
+
+        <!-- si tenemos muchas opciones podemos ordenarlas por categorias atraves de las etiquetas "<optgroup>"
+        -->
+
+        <select name="mascotas">
+        <optgroup label="4 patas">
+                <option name="perro">Perro</option>
+                <option name="Gato">Gato</option>
+                <option name="Zorra">Zorra</option>
+        </optgroup>
+        <optgroup label="sangre fria">
+                <option name="Pescado">Pescado</option>
+                <option name="Antilope">Antilope</option>
+                <option name="Serpiente">Serpiente</option>
+        </optgroup>
+        </select>
+
+
+        <input type="list" list="Mascotas"> <!-- la id debe ser igual al contenido de list-->
+        <datalist id="Mascotas">
+                        <option value="perro">zorro</option>
+                        <br>
+                        <option value="Gato">perro</option>
+                        <br>
+                        <option value="Zorra">Zorra</option> 
+        </datalist>
+        <!-- permite una automatizacion en la escritura-->
+
+        <!-- |FORMULARIO |
+        fieldset->agrupa elementos dentro de un formulario
+        legend ->etiqueta para el fieldset
+        -->
+<hr>
+        <form>
+                <fieldset >
+                        <legend> Datos personales</legend>
+                        <div>
+                                <label for="name">Nombre</label>
+                                <input type="text"id="name">
+                        </div>
+                        
+                        <div>
+                                <label  for="surname">Apellidos</label>
+                                <input type="text" id="surname">
+                        </div>
+                        
+                </fieldset>
+
+                <input type="file"> <!-- carga archivos para enviar-->
+<br>
+<!-- meter representa mediante una barra de progeso su valor
+        donde optimun es el valor optimo 
+        high es de color amarillo
+        low rojo
+-->
+                <label for="gasolina">Gasolina</label>
+                <meter id="gasolina" min="0" max="100" value="10" low="30" high="75" optimum="50">             
+                </meter>
+<!-- progress-> progeso de una tarea
+-->
+
+                <label for="task"> Tarea 1</label>
+                <progress id="task" max="100" value="100"></progress>
+        
+ <!-- textarea-> progeso de una tarea
+-->       
+<br>
+<label for="message">Mensaje</label>
+<textarea name="" id="" cols="30" rows="10">
+
+</textarea>
+        
+        </form>
+
+
+
+</body>
+
+</html> 

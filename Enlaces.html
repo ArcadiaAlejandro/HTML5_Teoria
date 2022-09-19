@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es"> <!--atributos -->
+<head>
+        <meta charset="UTF-8"> <!--atributos -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--atributos -->
+        <title>Home</title>
+</head>
+<body>
+            <H1>Bloque</H1>
+            <a href="Bloque.html">Ir a bloque</a>
+
+            <!--RUTAS ABSOLUTAS 
+                    tienen protocolo http o https, son unicas en la red 
+                    suelen utilizar rutas externas
+                RUTAS RELATIVAS
+                    Si se encuentra en el mismo nivel usamos ../ para ir una carpeta atras delo contrario se copia la ruta del proyecto
+            
+            ATRIBUTOS DE ENLACE
+            TARGET: Define como se habre el recurso solicitado [en rutas absolutas se pone como valor ["_blank"] (abre una pestañana nueva) o ["_self"] (pierde la pagina con el enlace)
+            
+            Download: Atributo booleano, sirve para descargar el recurso solicitado 
+            El recurso debe estar en el mismo servidor, dado que si usamos un ruta absoluta esta no nos servira
+            -->
+
+            <a href="/Header.html" download>Descargar</a> <!-- descarga el documento que tiene en referencia-->
+
+            <!-- con # nos redirije al id de los articulos dentro de la pagina-->
+            <p><a href="#Inicio">Inicio </a> </p>
+            
+            <!-- con # nos redirije al id de los articulos dentro de otras paginas-->
+            <p><a href="/Header.html#Inicio">Inicio </a> </p>
+        </body>
+
+</html> 

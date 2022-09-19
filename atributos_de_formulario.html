@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es"> <!--atributos -->
+<head>
+        <meta charset="UTF-8"> <!--atributos -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--atributos -->
+        <title>Tipos de formulario</title>
+</head>
+<body>
+        <main>
+                <h1>Tipos de formulario</h1>
+                
+                <!--
+                    placeholder -> pista para que escriba un usuario
+                    required -> campo obligatorio
+                    readonly -> solo leera el texto mas no lo cambiara pero puede hacer click
+                    disabled -> Desactiva el campo 
+
+
+                    |maximidad!
+
+                    min - max -> controlamos el minimo y maximo
+                    minlenght - maxlenght -> longitud de un texto
+                    selectd-> por donde empieza
+                    autofocus -> el foco por defecto se va a ese campo 
+                -->
+        </main>
+
+        <form> 
+            <!-- ejemplo de placeholder y required-->
+                <input type="text" placeholder="Introduce tu nombre" required autofocus>
+                <input type="text" value="Hola" readonly>
+                <input type="text" value="Hola" disabled>
+                <select name="numbers">
+                    <optgroup>
+                            <option value="one" selected> ONE</option>
+                            <option value="two"> TWO</option>
+                    </optgroup>
+                </select> 
+                <input type="number" min="5" max="10">
+                <input type="text" minlength="3" maxlength="5" required>
+                <input type="submit">
+        </form>
+
+</body>
+
+</html> 

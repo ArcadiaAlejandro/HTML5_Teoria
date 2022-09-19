@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es"> <!--atributos -->
+<head>
+        <meta charset="UTF-8"> <!--atributos -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--atributos -->
+        <title>Document</title>
+</head>
+<body>
+        <h1> Tablas</h1>
+        <!-- Muestran contenido tabulado
+                Table -> Etiqueta que cierra en una tabla
+                tr -> table row, contruye una fila
+                td -> table data, indica las columnas de la fila
+
+                el titulo de las tabla general se establece con la etiqueta "<caption>" se coloca despues de table  
+
+                las cabeceras de las tablas se establece con la etiqueta "<thead>" y en las celas se establece con <th> en lugar de <td>
+
+                <tbody> SE USA siempre que este un <thead> y de forma opcional se pone una etiqueta <tfoot>
+
+                    para hacer que las celdas ocupen mas de una fila o columna se usa:
+
+                    rowspan: sirve para que una celda ocupe más de una fila, su valor por default es 1
+                        -> codigo [<td rowspan="2">Tecnologia</td>] ocupa 2 espacios en la columna
+
+                    colspan: sirve para que una celda ocupe más de una columna, su valor por default es 1
+                        -> codigo [<td colspan="5">RECREO</td>]
+                        ocupa 5 espacios en la fila
+
+                    --------------------------------
+                    colgroup -> seleccionar columna en concreto
+                                por cada columna existe 1 colgroup
+                    colspan
+                    rowspan
+        -->
+
+        <table>
+                <caption>HORARIO DE CLASES </caption>
+
+                <colgroup>
+                            <col span="5"> 
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                            <col>
+                </colgroup>
+                <thead> 
+                        <tr>
+                                <th></th>
+                                <th>L</th>s
+                                <th>M</th>
+                                <th>X</th>
+                                <th>J</th>
+                                <th>V</th>
+                        </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>8:30 - 9:30</td>
+                    <td>Matemáticas</td>
+                    <td>Matemáticas</td>
+                    <td>Sociales</td>
+                    <td>Matemáticas</td>
+                    <td>Matemáticas</td>
+                </tr>
+
+                <tr>
+                    <td>9:30 - 10:25</td>
+                    <td>Lenguaje</td>
+                    <td>Lenguaje</td>
+                    <td>Matemáticas</td>
+                    <td>Ciencia</td>
+                    <td>Lenguaje</td>
+                </tr>
+                
+                <tr>
+                    <td>10:25 - 11:20</td>
+                    <td>Educación Física </td>
+                    <td>ciencias</td>
+                    <td>Lenguaje</td>
+                    <td>Lenguaje</td>
+                    <td>Educación Física</td>
+                </tr>
+
+                <tr>
+                    <td>11:20 - 11:30 </td>
+                    <td colspan="5">RECREO</td>
+                </tr>
+
+                <tr>
+                    <td>11:30 - 12:40</td>
+                    <td>Matemáticas</td>
+                    <td>Sociales</td>
+                    <td>Quimica</td>
+                    <td>sociologia</td>
+                </tr>
+
+
+                <tr>
+                    <td>12:40 - 13:30</td>
+                    <td rowspan="2">Tecnologia</td>
+                    <td>Sociales</td>
+                    <td>Quimica</td>
+                    <td>sociologia</td>
+                    <td rowspan="2">Tecnologia</td>
+                </tr>
+
+                <tr>
+                    <td>13:30 - 14:30</td>
+                    <td>Inglés</td>
+                    <td>Sociales</td>
+                    <td>Inglés</td> 
+                </tr>
+
+            </tbody>
+
+
+            <tfoot>
+                    <tr>
+                        <td colspan="5"> Total de asignaturas</td>
+
+                        <td> 12 </td>
+                    </tr>
+            </tfoot>
+                
+        </table>
+</body>
+
+</html> 
